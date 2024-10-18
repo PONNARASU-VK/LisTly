@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Listly</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto+Slab:wght@100..900&family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    
+
+    <!--Navbar-->
+<div class="navbar">
+    <h1>LisTly</h1>
+</div>
+
+<!--Parent Container-->
+<div class="container">
+    <!--Child Container-->
+<div class="notes-container">
+    <h2>WelCome</h2>
+    <p>Welcome to LisTly, your personal space for capturing ideas, tasks, and reminders! Whether you're jotting down a quick thought or planning your day, LisTly ensures your notes are always saved and easily accessible. With a clean and simple interface, you can focus on what matters—your notes. Start organizing your thoughts today, and let LisTly keep them safe and sound!</p>
+    <button onclick="deletenote(event)" id="addnote">Delete</button>
+</div>
+</div>
+
+ <!--Pop Up--> 
+<div id="overlay"></div>
+
+<!--PopUp Box-->
+<div id="popup">
+    <h1>Add Notes</h1>
+    <form>
+    <input type="text" placeholder="Note Title" id="inputtitle">
+    <textarea placeholder="Description" id="inputdes"></textarea>
+    <button id="addnotebtn">ADD</button>
+    <button id="cancelbutton">CANCEL</button>
+</form>
+</div>
+
+<!--Add Button-->
+<button id="add-popup">+</button>
+
+<!--Js Link-->
+<script src="script.js"></script>
+
+</body>
+
+</html>

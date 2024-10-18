@@ -1,0 +1,416 @@
+/* HTML */
+html{
+    font-size: 16px;
+}
+
+/* Universel Selector*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Body */
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navbar */
+.navbar{
+    background-color: gold;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.navbar h1{
+    padding-left: 1.3rem;
+}
+
+/* Parent Container */
+.container{
+    padding: 0.66rem;
+    
+}
+
+/* Child Containers */ 
+.notes-container{
+    background-color:beige;
+    width: 20%;
+    margin: 1.2rem;
+    padding: 1rem;
+    vertical-align: top;
+    border-radius: 0.66rem;
+    display: inline-block;
+}
+
+.notes-container h2{
+    color:rgb(25, 25, 170);
+    padding-bottom: 1rem;
+}
+
+.notes-container p{
+    color: black;
+    padding-bottom: 1.4rem;
+}
+
+#addnote{
+    background-color:rgb(238, 166, 33);
+    color: black;
+    padding-left: 0.66rem;
+    padding-right: 0.66rem;
+    padding-top: 0.33rem;
+    padding-bottom: 0.33rem;
+    border: none;
+    border-radius: 0.66rem;
+    cursor: pointer;
+    font-size: 1.0625rem;
+    margin-top: 0.33rem;
+}
+
+/* Add Button + */
+#add-popup{
+    border-radius: 100%;
+    background-color: rgb(51, 255, 0);
+    padding-left: 1.9rem;
+    padding-right: 1.9rem;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    border: none;
+    font-size: 3.125rem;
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    cursor: pointer;
+    transition: 1s;
+}
+
+/* Pop Up Overlay*/
+#overlay{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    opacity: 0.8;
+    display: none;
+    z-index: 1;
+}
+
+/* PopUp Box */
+#popup{
+    background-color: gold;
+    width: 40%;
+    height: fit-content;
+    border-radius: 0.66rem;
+    color: black;
+    padding: 2.9rem;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    display: none;
+    z-index: 2;
+}
+
+#popup input{
+border: none;
+border-bottom: solid 0.1875rem black;
+width: 100%;
+background: transparent;
+padding: 0.66rem;
+margin-top: 1.9rem;
+font-size: 1.25rem;
+}
+
+#popup input::placeholder{
+font-size: 1.25rem;
+color: black;
+}
+
+#popup textarea{
+border: solid 0.1875rem black;
+width: 100%;
+background: transparent;
+margin-top: 1.3rem;
+padding: 0.66rem;
+font-size: 1.25rem;
+}
+    
+#popup textarea::placeholder{
+font-size: 1.25rem;
+color: black;
+}
+
+#popup input:focus{
+outline: none;
+}
+
+#popup textarea:focus{
+    outline: none;
+}
+
+#popup button{
+    background-color: black;
+    padding-top: 0.66rem;
+    padding-bottom: 0.66rem;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    color: white;
+    margin-top: 1.25rem;
+    cursor: pointer;
+}
+
+
+/* RESPONSIVE DESIGN */
+/* MEDIA QUERIES MAX-WIDTH : 600PX*/
+@media screen and (max-width: 600px){
+
+  /* HTML */
+    html{
+        font-size: 12.5px;
+    }
+
+/* Parent Container */
+.container{
+    padding: 0.66rem;
+    text-align: center;
+}
+
+/* Child Containers */ 
+.notes-container{
+    text-align: start;
+    background-color:beige;
+    width: 80%;
+    margin: 1.3rem;
+    padding: 1rem;
+    vertical-align: top;
+    border-radius: 0.66rem;
+    display: inline-block;
+}
+
+/* Add Button + */
+#add-popup{
+    border-radius: 100%;
+    background-color: rgb(0, 255, 26);
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
+    border: none;
+    font-size: 2.2rem;
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    cursor: pointer;
+    transition: 1s;
+}
+
+/* PopUp Box */
+#popup{
+    background-color: gold;
+    width: 60%;
+    height: fit-content;
+    border-radius: 0.66rem;
+    color: black;
+    padding: 3.5rem;
+    position: absolute;
+    left: 7%;
+    top: 20%;
+    display: none;
+    z-index: 2;
+}
+}
+/* MAX-WIDTH : 600PX FINISHED */
+
+
+/* MEDIA QUERIES MIN-WIDTH : 601PX */
+@media screen and (min-width: 601px){
+     /* HTML */
+    html{
+        font-size: 13.5px;
+    }
+
+/* Parent Container */
+.container{
+    padding: 0.66rem;
+    text-align: center;
+}
+
+/* Child Containers */ 
+.notes-container{
+    text-align: start;
+    background-color:beige;
+    width: 80%;
+    margin: 1.3rem;
+    padding: 1rem;
+    vertical-align: top;
+    border-radius: 0.66rem;
+    display: inline-block;
+}
+
+/* Add Button + */
+#add-popup{
+    border-radius: 100%;
+    background-color: rgb(0, 255, 26);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    border: none;
+    font-size: 2.3rem;
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    cursor: pointer;
+    transition: 1s;
+}
+
+/* PopUp Box */
+#popup{
+    background-color: gold;
+    width: 60%;
+    height: fit-content;
+    border-radius: 0.66rem;
+    color: black;
+    padding: 3.5rem;
+    position: absolute;
+    left: 12.5%;
+    top: 20%;
+    display: none;
+    z-index: 2;
+}
+}
+/* MIN-WIDTH : 601PX FINISHED */
+
+
+/* MEDIA QUERIES MIN-WIDTH : 769PX*/
+@media screen and (min-width: 769px){
+
+    /* HTML */
+    html{
+        font-size: 14.5px;
+    }
+
+    /* Child Containers */ 
+    .notes-container{
+    width: 37.5%;
+    }
+}
+/* MIN-WIDTH : 769PX FINISHED */
+
+
+/* MEDIA QUERIES MIN-WIDTH : 993PX */
+@media screen and (min-width: 993px){
+     
+    /* HTML */
+    html{
+        font-size: 15.5px;
+    }
+
+    /* Child Containers */ 
+    .notes-container{
+        width: 25%;
+        }
+
+        /* PopUp Box */
+        #popup input{
+            font-size: 1.50rem;
+            }
+            
+            #popup input::placeholder{
+            font-size: 1.50rem;
+            }
+            
+            #popup textarea{
+            font-size: 1.50rem;
+            }
+                
+            #popup textarea::placeholder{
+            font-size: 1.50rem;
+            }
+}
+/* MIN-WIDTH : 993PX FINISHED */
+
+
+/* MEDIA QUERIES MIN-WIDTH : 1201PX */
+@media screen and (min-width: 1201px){
+     
+    /* HTML */
+    html{
+        font-size: 16px;
+    }
+
+    /* Parent Container */
+.container{
+    padding: 1.5rem;
+    text-align: left;
+}
+
+/* Child Containers */ 
+.notes-container{
+    background-color:beige;
+    width: 20%;
+    margin: 1.2rem;
+    padding: 1rem;
+    vertical-align: top;
+    border-radius: 0.66rem;
+    display: inline-block;
+    }
+
+    /* Add Button + */
+#add-popup{
+    background-color: rgb(0, 255, 26);
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
+    font-size: 2.85rem;
+    bottom: 6%;
+    right: 3%;
+}
+
+/* PopUp Box */
+#popup{
+    background-color: gold;
+    width: 40%;
+    height: fit-content;
+    border-radius: 0.66rem;
+    color: black;
+    padding: 3.5rem;
+    position: absolute;
+    left: 25%;
+    top: 20%;
+    display: none;
+    z-index: 2;
+}
+}
+
+/* MEDIA QUERIES MIN-WIDTH : 1201PX to MAX-WIDTH : 1520PX */
+@media screen and (min-width: 1201px) and (max-width: 1520px){
+
+    /* Child Containers */ 
+    .notes-container{
+    background-color:beige;
+    width: 25%;
+    margin: 1.2rem;
+    padding: 1rem;
+    vertical-align: top;
+    border-radius: 0.66rem;
+    display: inline-block;
+    }
+
+    /* Add Button + */
+#add-popup{
+    background-color: rgb(0, 255, 26);
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 2.75rem;
+    bottom: 6%;
+    right: 3%;
+}
+}
+
+/* FINISHED */
+
